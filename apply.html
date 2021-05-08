@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply method</title>
+</head>
+<body>
+    <p id="result"></p>
+</body>
+<script>
+     const car = {
+                    color:'red',
+                    brand: 'A'
+                };
+                function move (car) {
+                    console.log(`car brand is ${this.brand} and car color is ${
+                        this.color
+                    }`)
+                    document.getElementById('result').innerText=move.apply (car, [2000])
+                }
+</script>
+</html>

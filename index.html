@@ -5,8 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="1-box">
+            <h3>apply method</h3>
+            <div class="eg">
+               <p>
+                const car = {
+                    color:'red';
+                    brand: 'A'
+                }
+                function move (car) {
+                    console.log(`car brand is ${this.brand} and car color is ${
+                        this.color
+                    }`)
+                    move.apply (car, [2000])
+                }
+            </p> 
+            </div>
+            <a href="apply.html">Demo</a>
+        </div>
+        <div class="2-box">
+            <h3>call method</h3>
+            <div class="eg">
+               <p>
+                const car = {
+                    color:'red';
+                    brand: 'A'
+                };
+                function move (car) {
+                    console.log(`car brand is ${this.brand} and car color is ${
+                        this.color
+                    }`)
+                    move.call (car, [2000])
+                }
+            </p> 
+            </div>
+            <a href="call.html">Demo</a>
+        </div>
+        <div class="3-box">
+            <h3>bind method</h3>
+            <div class="eg">
+               <p>
+                const car = {
+                    color:'red';
+                    brand: 'A'
+                };
+                function move (car) {
+                    console.log(`car brand is ${this.brand} and car color is ${
+                        this.color
+                    }`)
+                    let a = car.bind();
+                    a();
+                }
+            </p>
+            </div> 
+            <a href="bind.html">Demo</a>
+        </div>
+        <div class="4-box">
+            <h3>IIFE method</h3>
+            <div class="eg">
+                <p>
+                    (function hello vinoth() {
+                        console.log('hello vinoth')
+                    }) ();
+                </p>
+            </div>
+            <a href="IIFE.html">Demo</a>
+        </div>
+        <div class="5-box">
+            <h3>Closure</h3>
+            <div class="eg">
+                <p>
+                    function A () {
+                        let num = 2;
+                        let sum = 5;
+                    function B () {
+                        console.log(num + 7 + sum)
+                    }
+                    B()
+                    }
+                   A()
+                </p>
+            </div>
+            <a href="closure.html">Demo</a>
+        </div>
+    </div>
     
 </body>
 </html>
