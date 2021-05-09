@@ -1,0 +1,52 @@
+body{ 
+  background-color: #cccccc;
+  text-align: center;
+  font-family: cursive;
+}
+.container{
+    display: block;
+    color: bisque;
+}
+#content1, #content2{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+#tab1, #tab2, #tab3, #tab4, #tab5, #tab6, #tab7, #tab8{
+    border: solid brown;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: brown;
+    background-color: darkkhaki;
+}
+#website1, #website2, #website3, #website4, #website5, #website6, #website7, #website8, #email1, #email2, #email3, #email4, 
+#email5, #email6, #email7, #email8{
+    cursor: pointer;
+    color: blue;
+}
+@media only screen and (max-width: 768px) {
+    /*For mobile phone*/
+    body{
+        background-color: darkorange;
+    }
+    .container{
+        align-items: center;
+        justify-content: center;
+    }
+    #content1, #content2{
+        width:100%;
+        display: inline-block;
+        padding: 0px;
+    }
+    #tab1, #tab2, #tab3, #tab4, #tab5, #tab6, #tab7, #tab8{
+        padding: 3px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+}
+

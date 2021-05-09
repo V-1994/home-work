@@ -1,0 +1,57 @@
+body{ 
+    background-color: #cccccc;
+    text-align: center;
+    font-family: cursive;
+  }
+  .container{
+      display: block;
+      color: bisque;
+  }
+  #content1, #content2{
+      display: flex;
+      padding: 50px;
+      justify-content: center;
+  }
+  #tab1, #tab2, #tab3, #tab4, #tab5, #tab6, #tab7, #tab8{
+      border: solid brown;
+      box-sizing: border-box;
+      width: 300px;
+      height: 300px;
+      margin-right: 25px;
+      border-radius: 20px;
+      text-align: center;
+      color: brown;
+      background-color: cornflowerblue;
+  }
+  #title1, #title2, #title3, #title4, #title5, #title6, #title7, #title8{
+      color: black;
+      text-shadow: blueviolet;
+      font-size: 1.0rem;
+      cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+      /*For mobile phone*/
+      body{
+          background-color: darkorange;
+      }
+      .container{
+          align-items: center;
+          justify-content: center;
+      }
+      #content1, #content2{
+          width:100%;
+          display: inline-block;
+          padding: 30px;
+      }
+      #title1, #title2, #title3, #title4, #title5, #title6, #title7, #title8{
+        font-size: 20px;
+      }
+      #body1, #body2, #body3, #body4, #body5, #body6, #body7, #body8{
+          font-size: 18px;
+      }
+      #tab1, #tab2, #tab3, #tab4, #tab5, #tab6, #tab7, #tab8{
+          padding: 3px;
+          margin-bottom: 30px;
+      }
+
+  }
